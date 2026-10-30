@@ -1,0 +1,31 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+		A10000000000000000000001 /* WordLockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordLockApp.swift; sourceTree = "<group>"; };
+		A10000000000000000000002 /* built_in_words.csv */ = {isa = PBXFileReference; lastKnownFileType = text.csv; path = built_in_words.csv; sourceTree = "<group>"; };
+		A10000000000000000000003 /* WordLock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordLock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10000000000000000000004 /* WordLock.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = WordLock.xcodeproj; sourceTree = "<group>"; };
+		A20000000000000000000001 /* Project */ = {isa = PBXGroup; children = (A20000000000000000000002 /* LockWord */, A20000000000000000000003 /* Products */, ); sourceTree = "<group>"; };
+		A20000000000000000000002 /* LockWord */ = {isa = PBXGroup; path = LockWord; sourceTree = "<group>"; children = (A10000000000000000000001 /* WordLockApp.swift */, A20000000000000000000005 /* Resources */, ); };
+		A20000000000000000000003 /* Products */ = {isa = PBXGroup; name = Products; sourceTree = "<group>"; children = (A10000000000000000000003 /* WordLock.app */, ); };
+		A20000000000000000000005 /* Resources */ = {isa = PBXGroup; path = Resources; sourceTree = "<group>"; children = (A10000000000000000000002 /* built_in_words.csv */, ); };
+		A30000000000000000000001 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A30000000000000000000005 /* WordLockApp.swift in Sources */, ); runOnlyForDeploymentPostprocessing = 0; };
+		A30000000000000000000002 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (A30000000000000000000004 /* built_in_words.csv in Resources */, ); runOnlyForDeploymentPostprocessing = 0; };
+		A30000000000000000000003 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		A30000000000000000000004 /* built_in_words.csv in Resources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000002 /* built_in_words.csv */; };
+		A30000000000000000000005 /* WordLockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000001 /* WordLockApp.swift */; };
+		A40000000000000000000001 /* WordLock */ = {isa = PBXNativeTarget; buildConfigurationList = A50000000000000000000002 /* Build configuration list for PBXNativeTarget */; buildPhases = (A30000000000000000000001 /* Sources */, A30000000000000000000003 /* Frameworks */, A30000000000000000000002 /* Resources */, ); buildRules = (); dependencies = (); name = WordLock; productName = WordLock; productReference = A10000000000000000000003 /* WordLock.app */; productType = "com.apple.product-type.application"; };
+		A50000000000000000000001 /* Build configuration list for PBXProject */ = {isa = XCConfigurationList; buildConfigurations = (A60000000000000000000001 /* Debug */, A60000000000000000000002 /* Release */, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		A50000000000000000000002 /* Build configuration list for PBXNativeTarget */ = {isa = XCConfigurationList; buildConfigurations = (A60000000000000000000003 /* Debug */, A60000000000000000000004 /* Release */, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		A60000000000000000000001 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {CLANG_ENABLE_MODULES = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; SDKROOT = iphoneos; SWIFT_VERSION = 5.0; }; name = Debug; };
+		A60000000000000000000002 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {CLANG_ENABLE_MODULES = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; SDKROOT = iphoneos; SWIFT_VERSION = 5.0; }; name = Release; };
+		A60000000000000000000003 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = WordLock; INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education"; IPHONEOS_DEPLOYMENT_TARGET = 17.0; MARKETING_VERSION = 1.0.0; PRODUCT_BUNDLE_IDENTIFIER = kr.co.lockword.ios; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = iphoneos; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Debug; };
+		A60000000000000000000004 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = WordLock; INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education"; IPHONEOS_DEPLOYMENT_TARGET = 17.0; MARKETING_VERSION = 1.0.0; PRODUCT_BUNDLE_IDENTIFIER = kr.co.lockword.ios; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = iphoneos; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Release; };
+		A70000000000000000000001 /* Project object */ = {isa = PBXProject; attributes = {BuildIndependentTargetsIn parallel = 1; LastUpgradeCheck = 1600; TargetAttributes = {A40000000000000000000001 = {CreatedOnToolsVersion = 16.0; }; }; }; buildConfigurationList = A50000000000000000000001 /* Build configuration list for PBXProject */; compatibilityVersion = "Xcode 15.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en, Base, ko, ); mainGroup = A20000000000000000000001 /* Project */; productRefGroup = A20000000000000000000003 /* Products */; projectDirPath = ""; projectRoot = ""; targets = (A40000000000000000000001 /* WordLock */, ); };
+	};
+	rootObject = A70000000000000000000001 /* Project object */;
+}
+
